@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Video Chat</title>
+    <style>
+        #localVideo, #remoteVideo {
+            width: 45%;
+            margin: 10px;
+        }
+        #controls {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebRTC Video Chat</h1>
+    <h2 id="roomId"></h2>
+    <video id="localVideo" playsinline autoplay muted></video>
+    <video id="remoteVideo" playsinline autoplay></video>
+    <div id="controls">
+        <button id="startButton">Start Call</button>
+        <input id="roomIdInput">
+        <button id="toggleCameraButton"></button>
+        <button id="toggleMicButton"></button>
+    </div>
+    <div id="info">
+        <div id="stats"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
